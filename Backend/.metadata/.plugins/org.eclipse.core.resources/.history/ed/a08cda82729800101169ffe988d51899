@@ -1,0 +1,5 @@
+package com.ey.fda.config;
+
+public class SecurityConfig {
+
+}

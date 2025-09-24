@@ -1,0 +1,5 @@
+package com.ey.fda.service;
+
+public class UserServiceImpl {
+
+}

@@ -1,0 +1,12 @@
+spring.application.name=FoodDeliveryApp
+
+spring.datasource.url=jdbc:mysql://localhost:3306/fooddelivery_db
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+jwt.secret=453d5e6a-6434-41dd-97cd-b30475b2c3ed

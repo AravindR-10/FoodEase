@@ -1,0 +1,59 @@
+package com.ey.fda.jwt;
+
+import com.ey.fda.entity.User;
+import com.ey.fda.enums.Role;
+import io.jsonwebtoken.*;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+@Component
+public class JwtUtil {
+
+    @Value("${jwt.secret}")
+    private String SECRET_KEY;
+
+    private final long EXPIRATION = 1000 * 60 * 60 * 10;
+
+    public String generateToken(User user, Role role) {
+        Map<String, Object> claims = new HashMap<>();
+        claims.put("role", role.name());
+        claims.put("email", user.getEmail());
+        return Jwts.builder()
+                .setClaims(claims)
+                .setSubject(user.getUsername())
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION))
+                .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
+                .compact();
+    }
+
+    public String extractEmail(String token) {
+        return (String) getClaims(token).get("email");
+    }
+
+    public Role extractRole(String token) {
+        String roleName = (String) getClaims(token).get("role");
+        return Role.valueOf(roleName);
+    }
+
+    public boolean validateToken(String token, UserDetails userDetails) {
+        final String email = extractEmail(token);
+        return (email.equals(userDetails.getUsername()) && !isTokenExpired(token));
+    }
+
+    private boolean isTokenExpired(String token) {
+        return getClaims(token).getExpiration().before(new Date());
+    }
+
+    private Claims getClaims(String token) {
+        return Jwts.parser()
+                .setSigningKey(SECRET_KEY)
+                .parseClaimsJws(token)
+                .getBody();
+    }
+}

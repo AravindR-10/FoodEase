@@ -1,0 +1,5 @@
+package com.ey.fda.entity;
+
+public class User {
+
+}
