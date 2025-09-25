@@ -1,0 +1,5 @@
+package com.ey.fda.exception;
+
+public class ResourceNotFoundException {
+
+}

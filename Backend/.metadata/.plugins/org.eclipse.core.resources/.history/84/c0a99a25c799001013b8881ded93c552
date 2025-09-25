@@ -1,0 +1,12 @@
+package com.ey.fda.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ey.fda.entity.Restaurants;
+
+public interface RestaurantRepository extends JpaRepository<Restaurants, Long>{
+	
+	List<Restaurants> findByOwnerId(Long ownerId);
+}

@@ -1,0 +1,80 @@
+package com.ey.fda.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ey.fda.dto.RestaurantDTO;
+import com.ey.fda.entity.Restaurant;
+import com.ey.fda.entity.User;
+import com.ey.fda.exception.ResourceNotFoundException;
+import com.ey.fda.repository.RestaurantRepository;
+import com.ey.fda.repository.UserRepository;
+
+@Service
+public class RestaurantServiceImpl implements RestaurantService {
+
+	@Autowired
+	private UserRepository userRepository;
+
+	@Autowired
+	private RestaurantRepository restaurantRepository;
+
+	@Override
+	public RestaurantDTO createRestaurant(RestaurantDTO restaurantDTO) {
+
+		User owner = userRepository.findById(restaurantDTO.getOwnerId())
+				.orElseThrow(() -> new ResourceNotFoundException("Owner not found"));
+
+		Restaurant restaurant = new Restaurant();
+		restaurant.setName(restaurantDTO.getName());
+		restaurant.setAddress(restaurantDTO.getAddress());
+		restaurant.setRating(restaurantDTO.getRating());
+		restaurant.setOwner(owner);
+
+		Restaurant saved = restaurantRepository.save(restaurant);
+
+		RestaurantDTO response = new RestaurantDTO();
+		response.setId(saved.getId());
+		response.setName(saved.getName());
+		response.setAddress(saved.getAddress());
+		response.setRating(saved.getRating());
+		response.setOwnerId(saved.getOwner().getId());
+
+		return response;
+
+	}
+
+	@Override
+	public RestaurantDTO updateRestaurant(Long id, RestaurantDTO restaurantDTO) {
+		
+		Restaurants restaurant = 
+		return null;
+	}
+
+	@Override
+	public void deleteRestaurant(Long id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public RestaurantDTO getRestaurantById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<RestaurantDTO> getRestaurantsByOwner(Long ownerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<RestaurantDTO> getAllRestaurants() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

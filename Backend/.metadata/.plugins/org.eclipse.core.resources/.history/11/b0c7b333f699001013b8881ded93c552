@@ -1,0 +1,74 @@
+package com.ey.fda.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ey.fda.dto.MenuItemDTO;
+import com.ey.fda.entity.MenuItem;
+import com.ey.fda.entity.Restaurant;
+import com.ey.fda.exception.ResourceNotFoundException;
+import com.ey.fda.repository.MenuItemRepository;
+import com.ey.fda.repository.RestaurantRepository;
+
+@Service
+public class MenuItemServiceImpl implements MenuItemService{
+	
+	@Autowired
+	private MenuItemRepository menuItemRepository;
+	
+	@Autowired
+	private RestaurantRepository restaurantRepository;
+	
+	@Override
+	public MenuItemDTO addMenuItem(MenuItemDTO menuItemDTO) {
+		
+		Restaurant restaurant = restaurantRepository.findById(menuItemDTO.getRestaurantId())
+				.orElseThrow(() -> new ResourceNotFoundException("Restaurant not found"));
+		
+		MenuItem item = new MenuItem();
+		item.setName(menuItemDTO.getName());
+		item.setDescription(menuItemDTO.getDescription());
+		item.setPrice(menuItemDTO.getPrice());
+		item.setAvailable(menuItemDTO.getAvailable());
+		item.setRestaurant(restaurant);
+		
+		MenuItem saved = menuItemRepository.save(item);
+		
+		MenuItemDTO response = new MenuItemDTO();
+		response.setId(saved.getId());
+		response.setName(saved.getName());
+		response.setDescription(saved.getDescription());
+		response.setPrice(saved.getPrice());
+		response.setAvailable(saved.getAvailable());
+		response.setRestaurantId(saved.getRestaurant().getId());
+		
+		return response;
+	}
+
+	@Override
+	public MenuItemDTO updateMenuItem(Long id, MenuItemDTO menuItemDTO) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteMenuItem(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public MenuItemDTO getMenuItemById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<MenuItemDTO> getAllMenuItemsByRestaurant(Long restaurantId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.ey.fda.repository;
+
+public interface RestaurantRepository {
+
+}

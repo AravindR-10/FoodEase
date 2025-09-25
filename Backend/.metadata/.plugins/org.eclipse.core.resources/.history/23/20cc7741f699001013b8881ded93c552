@@ -1,0 +1,110 @@
+package com.ey.fda.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ey.fda.dto.MenuItemDTO;
+import com.ey.fda.entity.MenuItem;
+import com.ey.fda.entity.Restaurant;
+import com.ey.fda.exception.ResourceNotFoundException;
+import com.ey.fda.repository.MenuItemRepository;
+import com.ey.fda.repository.RestaurantRepository;
+
+@Service
+public class MenuItemServiceImpl implements MenuItemService{
+	
+	@Autowired
+	private MenuItemRepository menuItemRepository;
+	
+	@Autowired
+	private RestaurantRepository restaurantRepository;
+	
+	@Override
+	public MenuItemDTO addMenuItem(MenuItemDTO menuItemDTO) {
+		
+		Restaurant restaurant = restaurantRepository.findById(menuItemDTO.getRestaurantId())
+				.orElseThrow(() -> new ResourceNotFoundException("Restaurant not found"));
+		
+		MenuItem item = new MenuItem();
+		item.setName(menuItemDTO.getName());
+		item.setDescription(menuItemDTO.getDescription());
+		item.setPrice(menuItemDTO.getPrice());
+		item.setAvailable(menuItemDTO.getAvailable());
+		item.setRestaurant(restaurant);
+		
+		MenuItem saved = menuItemRepository.save(item);
+		
+		MenuItemDTO response = new MenuItemDTO();
+		response.setId(saved.getId());
+		response.setName(saved.getName());
+		response.setDescription(saved.getDescription());
+		response.setPrice(saved.getPrice());
+		response.setAvailable(saved.getAvailable());
+		response.setRestaurantId(saved.getRestaurant().getId());
+		
+		return response;
+	}
+
+
+@Override
+    public MenuItemDTO updateMenuItem(Long id, MenuItemDTO dto) {
+        MenuItem item = menuItemRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Menu item not found"));
+
+        item.setName(dto.getName());
+        item.setDescription(dto.getDescription());
+        item.setPrice(dto.getPrice());
+        item.setAvailable(dto.getAvailable());
+
+        MenuItem updated = menuItemRepository.save(item);
+
+        return new MenuItemDTO(
+                updated.getId(),
+                updated.getName(),
+                updated.getDescription(),
+                updated.getPrice(),
+                updated.getAvailable(),
+                updated.getRestaurant().getId()
+        );
+    }
+
+    @Override
+    public void deleteMenuItem(Long id) {
+        MenuItem item = menuItemRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Menu item not found"));
+        menuItemRepository.delete(item);
+    }
+
+    @Override
+    public MenuItemDTO getMenuItemById(Long id) {
+        MenuItem item = menuItemRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Menu item not found"));
+
+        return new MenuItemDTO(
+                item.getId(),
+                item.getName(),
+                item.getDescription(),
+                item.getPrice(),
+                item.getAvailable(),
+                item.getRestaurant().getId()
+        );
+    }
+
+    @Override
+    public List<MenuItemDTO> getMenuItemsByRestaurant(Long restaurantId) {
+        return menuItemRepository.findByRestaurantId(restaurantId)
+                .stream()
+                .map(item -> new MenuItemDTO(
+                        item.getId(),
+                        item.getName(),
+                        item.getDescription(),
+                        item.getPrice(),
+                        item.getAvailable(),
+                        item.getRestaurant().getId()
+                ))
+                .collect(Collectors.toList());
+    }
+}

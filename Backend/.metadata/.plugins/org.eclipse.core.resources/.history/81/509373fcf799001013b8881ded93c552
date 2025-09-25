@@ -1,0 +1,61 @@
+package com.ey.fda.controller;
+
+import com.ey.fda.dto.RestaurantDTO;
+import com.ey.fda.service.RestaurantService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/restaurant")
+public class RestaurantController {
+
+    @Autowired
+    private RestaurantService restaurantService;
+
+    @PostMapping
+    @PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
+    public ResponseEntity<RestaurantDTO> createRestaurant(@RequestBody RestaurantDTO dto) {
+        RestaurantDTO created = restaurantService.createRestaurant(dto);
+        return ResponseEntity.ok(created);
+    }
+
+    @PutMapping("/{id}")
+    @PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
+    public ResponseEntity<RestaurantDTO> updateRestaurant(@PathVariable Long id, @RequestBody RestaurantDTO dto) {
+        RestaurantDTO updated = restaurantService.updateRestaurant(id, dto);
+        return ResponseEntity.ok(updated);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
+    public ResponseEntity<String> deleteRestaurant(@PathVariable Long id) {
+        restaurantService.deleteRestaurant(id);
+        return ResponseEntity.ok("Restaurant deleted successfully");
+    }
+
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
+    public ResponseEntity<RestaurantDTO> getRestaurantById(@PathVariable Long id) {
+        RestaurantDTO dto = restaurantService.getRestaurantById(id);
+        return ResponseEntity.ok(dto);
+    }
+
+    @GetMapping("/owner/{ownerId}")
+    @PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
+    public ResponseEntity<List<RestaurantDTO>> getRestaurantsByOwner(@PathVariable Long ownerId) {
+        List<RestaurantDTO> list = restaurantService.getRestaurantsByOwner(ownerId);
+        return ResponseEntity.ok(list);
+    }
+
+    @GetMapping
+    @PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
+    public ResponseEntity<List<RestaurantDTO>> getAllRestaurants() {
+        List<RestaurantDTO> list = restaurantService.getAllRestaurants();
+        return ResponseEntity.ok(list);
+    }
+}
