@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
     <fullyQualifiedTypeName name="com.ey.fda.dto.RegisterRequestDTO"/>
     <fullyQualifiedTypeName name="com.ey.fda.enums.Role"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="com.ey.fda.repository.UserRepository"/>
     <fullyQualifiedTypeName name="com.ey.fda.entity.User"/>
     <fullyQualifiedTypeName name="com.ey.fda.entity.Restaurants"/>
     <fullyQualifiedTypeName name="com.ey.fda.dto.RestaurantDTO"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="com.ey.fda.entity.Restaurant"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.ey.fda.repository.MenuItemRepository"/>
     <fullyQualifiedTypeName name="com.ey.fda.repository.RestaurantRepository"/>
     <fullyQualifiedTypeName name="com.ey.fda.exception.ResourceNotFoundException"/>
     <fullyQualifiedTypeName name="com.ey.fda.entity.MenuItem"/>
     <fullyQualifiedTypeName name="com.ey.fda.dto.MenuItemDTO"/>
     <fullyQualifiedTypeName name="com.ey.fda.service.MenuItemService"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="com.ey.fda.entity.Order"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

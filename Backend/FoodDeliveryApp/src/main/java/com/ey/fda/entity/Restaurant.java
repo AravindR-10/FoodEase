@@ -27,8 +27,11 @@ public class Restaurant {
 	@JoinColumn(name="owner_id", nullable = false)
 	private User owner;
 	
-	@OneToMany(mappedBy="restaurant", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy="restaurant", cascade = CascadeType.ALL)
 	private List<MenuItem> menuItems;
+	
+	@OneToMany(mappedBy="restaurant", cascade = CascadeType.ALL)
+	private List<Order> orders;
 
 	public Long getId() {
 		return id;
@@ -76,6 +79,14 @@ public class Restaurant {
 
 	public void setMenuItems(List<MenuItem> menuItems) {
 		this.menuItems = menuItems;
+	}
+
+	public List<Order> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(List<Order> orders) {
+		this.orders = orders;
 	}
 
 	public Restaurant() {

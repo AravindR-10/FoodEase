@@ -1,0 +1,118 @@
+package com.ey.fda.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ey.fda.dto.OrderDTO;
+import com.ey.fda.dto.OrderItemDTO;
+import com.ey.fda.entity.Order;
+import com.ey.fda.entity.OrderItem;
+import com.ey.fda.entity.MenuItem;
+import com.ey.fda.entity.Restaurant;
+import com.ey.fda.entity.User;
+import com.ey.fda.enums.OrderStatus;
+import com.ey.fda.exception.ResourceNotFoundException;
+import com.ey.fda.repository.OrderRepository;
+import com.ey.fda.repository.MenuItemRepository;
+import com.ey.fda.repository.RestaurantRepository;
+import com.ey.fda.repository.UserRepository;
+
+@Service
+public class OrderServiceImpl implements OrderService {
+
+    @Autowired
+    private OrderRepository orderRepository;
+
+    @Autowired
+    private MenuItemRepository menuItemRepository;
+
+    @Autowired
+    private RestaurantRepository restaurantRepository;
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Override
+    public OrderDTO placeOrder(OrderDTO dto) {
+        User customer = userRepository.findById(dto.getCustomerId())
+                .orElseThrow(() -> new ResourceNotFoundException("Customer not found"));
+
+        Restaurant restaurant = restaurantRepository.findById(dto.getRestaurantId())
+                .orElseThrow(() -> new ResourceNotFoundException("Restaurant not found"));
+
+        Order order = new Order();
+        order.setCustomer(customer);
+        order.setRestaurant(restaurant);
+        order.setStatus(OrderStatus.PLACED);
+        double totalAmount = dto.getOrderItems().stream()
+        	    .mapToDouble(item -> item.getPrice() * item.getQuantity())
+        	    .sum();
+        order.setTotalAmount(totalAmount);
+
+        List<OrderItem> items = dto.getOrderItems().stream().map(itemDTO -> {
+            MenuItem menuItem = menuItemRepository.findById(itemDTO.getMenuItemId())
+                    .orElseThrow(() -> new ResourceNotFoundException("Menu item not found"));
+
+            OrderItem item = new OrderItem();
+            item.setOrder(order);
+            item.setMenuItem(menuItem);
+            item.setQuantity(itemDTO.getQuantity());
+            item.setPrice(itemDTO.getPrice());
+            return item;
+        }).collect(Collectors.toList());
+
+        order.setOrderItems(items);
+        Order saved = orderRepository.save(order);
+
+        return new OrderDTO(
+                saved.getId(),
+                customer.getId(),
+                restaurant.getId(),
+                saved.getStatus().name(),
+                totalAmount,
+                dto.getOrderItems()
+        );
+    }
+
+    @Override
+    public OrderDTO getOrderById(Long id) {
+        Order order = orderRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Order not found"));
+
+        List<OrderItemDTO> itemDTOs = order.getOrderItems().stream().map(item -> new OrderItemDTO(
+                item.getId(),
+                order.getId(),
+                item.getMenuItem().getId(),
+                item.getQuantity(),
+                item.getPrice()
+        )).collect(Collectors.toList());
+
+        return new OrderDTO(
+                order.getId(),
+                order.getCustomer().getId(),
+                order.getRestaurant().getId(),
+                order.getStatus().name(),
+                order.getTotalAmount(),
+                itemDTOs
+        );
+    }
+
+    @Override
+    public List<OrderDTO> getOrdersByCustomer(Long customerId) {
+        List<Order> orders = orderRepository.findByCustomerId(customerId);
+        return orders.stream()
+                     .map(order -> getOrderById(order.getId()))
+                     .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<OrderDTO> getOrdersByRestaurant(Long restaurantId) {
+        List<Order> orders = orderRepository.findByRestaurantId(restaurantId);
+        return orders.stream()
+                     .map(order -> getOrderById(order.getId()))
+                     .collect(Collectors.toList());
+    }
+}

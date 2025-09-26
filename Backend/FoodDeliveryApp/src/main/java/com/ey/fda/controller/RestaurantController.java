@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ey.fda.dto.MenuItemDTO;
+import com.ey.fda.dto.OrderDTO;
 import com.ey.fda.dto.RestaurantDTO;
 import com.ey.fda.service.MenuItemService;
+import com.ey.fda.service.OrderService;
 import com.ey.fda.service.RestaurantService;
 
 @RestController
@@ -28,6 +30,9 @@ public class RestaurantController {
 
 	@Autowired
 	private MenuItemService menuItemService;
+	
+	@Autowired
+	private OrderService orderService;
 
 	@PostMapping
 	@PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
@@ -64,13 +69,6 @@ public class RestaurantController {
 		return ResponseEntity.ok(list);
 	}
 
-	@GetMapping
-	@PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
-	public ResponseEntity<List<RestaurantDTO>> getAllRestaurants() {
-		List<RestaurantDTO> list = restaurantService.getAllRestaurants();
-		return ResponseEntity.ok(list);
-	}
-
 	@PostMapping("/{restaurantId}/menu")
 	@PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
 	public ResponseEntity<MenuItemDTO> addMenuItem(@PathVariable Long restaurantId, @RequestBody MenuItemDTO dto) {
@@ -103,4 +101,16 @@ public class RestaurantController {
 		return ResponseEntity.ok(menuItemService.getMenuItemById(menuItemId));
 	}
 
+	@GetMapping("/orders/{restaurantId}")
+	@PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
+    public ResponseEntity<List<OrderDTO>> getOrdersByRestaurant(@PathVariable Long restaurantId) {
+        List<OrderDTO> orders = orderService.getOrdersByRestaurant(restaurantId);
+        return ResponseEntity.ok(orders);
+    }
+
+    @GetMapping("orders/details/{orderId}")
+    public ResponseEntity<OrderDTO> getOrderDetails(@PathVariable Long orderId) {
+        OrderDTO order = orderService.getOrderById(orderId);
+        return ResponseEntity.ok(order);
+    }
 }

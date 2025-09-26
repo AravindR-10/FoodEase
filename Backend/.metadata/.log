@@ -5558,3 +5558,1726 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-25 21:59:05.742
 !MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+!SESSION 2025-09-26 10:11:24.154 -----------------------------------------------
+eclipse.buildId=4.37.0.202509051843
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-26 10:13:00.923
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-26 10:13:01.244
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-26 10:13:12.897
+!MESSAGE Logback config file: C:\CapstoneProject\SourceCode\Backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-09-26 10:13:13.738
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-26 10:13:13.738
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-26 10:13:14.348
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-26 10:13:14.348
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-09-26 10:13:31.218
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FJ529CG'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:30:04.696
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:30:04.697
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:30:04.698
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:30:04.699
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-26 10:31:24.655
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:147)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:100)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:398)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.lambda$0(AbstractReconciler.java:235)
+	at org.eclipse.core.runtime.jobs.Job$1.run(Job.java:166)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:36:13.636
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:36:13.637
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:36:13.638
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:36:13.639
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:41:15.861
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:41:15.862
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:41:15.863
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:41:15.864
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:43:47.429
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:43:47.430
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:43:47.430
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:43:47.431
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:47:09.326
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:47:09.326
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:47:09.327
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:47:09.328
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:55:40.899
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:55:40.900
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:55:40.900
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:55:40.901
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:56:48.477
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:56:48.477
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:56:48.478
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:56:48.478
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:34.196
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:34.196
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:34.197
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:34.198
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:40.285
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:40.286
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:40.287
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 10:58:40.289
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:00:41.296
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:00:41.297
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:00:41.298
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:00:41.299
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:09:34.419
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:09:34.421
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:09:34.422
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:09:34.423
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:08.758
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:08.758
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:08.759
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:08.760
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:49.375
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:49.376
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:49.377
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 11:11:49.378
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.jface 2 0 2025-09-26 11:11:58.117
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-26 11:11:58.117
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-26 12:01:02.404
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:42.271
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:42.272
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:42.272
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:42.273
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:43.922
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:43.923
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:43.923
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:05:43.924
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:12:54.464
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:12:54.465
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:12:54.465
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:12:54.465
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:19:44.428
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:19:44.429
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:19:44.429
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:19:44.429
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:20:00.677
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:20:00.678
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:20:00.678
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:20:00.679
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:24:41.261
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:24:41.262
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:24:41.262
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:24:41.263
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:26:19.106
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:26:19.106
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:26:19.107
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:26:19.108
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:28:12.295
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:28:12.296
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:28:12.297
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:28:12.297
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:30:44.210
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:30:44.211
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:30:44.212
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:30:44.212
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:06.885
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:06.887
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:06.888
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:06.888
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:22.833
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:22.835
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:22.836
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:31:22.836
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:35:20.164
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:35:20.165
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:35:20.166
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:35:20.166
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:39:58.848
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:39:58.849
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:39:58.849
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:39:58.850
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:07.859
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:07.860
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:07.860
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:07.861
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:27.959
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:27.959
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:27.960
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:42:27.960
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:43:51.164
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:43:51.165
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:43:51.165
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:43:51.166
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:44:10.276
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:44:10.276
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:44:10.277
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:44:10.277
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:47:55.829
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:47:55.830
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:47:55.831
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:47:55.831
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:49:00.589
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:49:00.590
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:49:00.592
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:49:00.594
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:50:37.760
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:50:37.761
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:50:37.763
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:50:37.764
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:55:16.556
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:55:16.558
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:55:16.560
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:55:16.561
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:56:05.849
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:56:05.851
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:56:05.853
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 12:56:05.854
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:08:48.193
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:08:48.193
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:08:48.194
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:08:48.194
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:18:51.128
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:18:51.128
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:18:51.129
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:18:51.129
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:24:42.850
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:24:42.853
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:24:42.855
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:24:42.856
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:28:17.282
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:28:17.283
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:28:17.284
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:28:17.285
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:29:18.668
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:29:18.669
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:29:18.671
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:29:18.672
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.261
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1141, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.262
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1418, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.263
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1725, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.265
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1987, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.266
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2259, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.267
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2543, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.268
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2811, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.269
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3120, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.269
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3410, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.270
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3696, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:15.270
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3978, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.959
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1147, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.960
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1424, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.962
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1731, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.962
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1993, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.967
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2265, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.968
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2549, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.968
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2817, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.969
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3126, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.970
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3416, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.970
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3702, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:17.971
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3984, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.719
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1148, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.720
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1425, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.721
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1732, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.722
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1994, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.722
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2266, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.723
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2550, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.724
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2818, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.725
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3127, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.726
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3417, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.727
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3703, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:18.727
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3985, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.636
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1153, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.638
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1430, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.638
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1737, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.639
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1999, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.640
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2271, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.640
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2555, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.641
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2823, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.641
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3132, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.642
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3422, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.642
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3708, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:20.643
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3990, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.312
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1160, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.314
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1437, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.316
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1744, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.317
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2006, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.318
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2278, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.319
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2562, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.320
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2830, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.320
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3139, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.321
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3429, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.322
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3715, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:22.323
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3997, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.401
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1168, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.402
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1445, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.403
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1752, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.404
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2014, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.404
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2286, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.405
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2570, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.405
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2838, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.406
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3147, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.406
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3437, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.407
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3723, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:24.407
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4005, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.831
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1450, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.833
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1757, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.834
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2019, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.834
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2291, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.835
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2575, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.836
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2843, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.837
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3152, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.837
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3442, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.838
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3728, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:26.839
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4010, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.973
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1453, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.974
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1760, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.976
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2022, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.977
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2294, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.978
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2578, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.979
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2846, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.979
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3155, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.981
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3445, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.981
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3731, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:27.982
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4013, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.298
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1457, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.300
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1764, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.301
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2026, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.302
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2298, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.303
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2582, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.304
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2850, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.306
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3159, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.308
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3449, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.308
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3735, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:29.309
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4017, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.740
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1194, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.742
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1471, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.743
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1778, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.744
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2040, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.745
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2312, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.746
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2596, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.746
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2864, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.747
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3173, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.748
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3463, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.749
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3749, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:33.750
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4031, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.508
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.509
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.510
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.511
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.512
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.513
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.514
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.515
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.516
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.517
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:36:34.517
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.028
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.029
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.030
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.031
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.032
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.033
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.034
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.036
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.037
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.038
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:11.039
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.193
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.194
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.195
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.196
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.197
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.198
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.199
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.199
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.200
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.201
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:12.202
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.372
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.373
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.374
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.376
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.377
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.377
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.378
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.379
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.380
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.381
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:15.382
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.509
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.510
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.512
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.513
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.514
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.515
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.516
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.516
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.517
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.518
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:32.519
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.157
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.159
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.160
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.161
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.162
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.164
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.165
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.166
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.166
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.167
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.167
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:33.168
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4323, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.335
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.337
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.338
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.338
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.339
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.340
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.341
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.343
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.344
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.344
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.345
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.346
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4323, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:39:36.347
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4652, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.404
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.406
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.407
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.408
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.409
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.410
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.411
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.412
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.413
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.414
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.415
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:09.416
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4323, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.526
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.527
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.529
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.529
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.530
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.531
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.532
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.534
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.534
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.535
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.536
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:18.536
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4329, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.737
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.739
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.741
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.742
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.742
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.743
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.744
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.744
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.745
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.745
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.746
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:22.747
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4330, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:28.995
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:28.997
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:28.998
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:28.999
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.000
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.001
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.002
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.003
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.004
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.005
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.005
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.006
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4330, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.751
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.751
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.752
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.752
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.753
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.753
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.754
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.754
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.754
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.755
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.755
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:29.755
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4330, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.290
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1235, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.291
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1512, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.292
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1819, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.293
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2081, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.294
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2353, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.295
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2637, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.296
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2905, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.297
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3214, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.298
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3504, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.298
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3790, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.299
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4072, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:33.300
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4330, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.937
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.939
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.939
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.940
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.941
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.943
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2670, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.944
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2938, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.944
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3247, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.945
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3537, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.946
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3823, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.947
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4105, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:35.947
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4363, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.607
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.607
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.608
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.609
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.609
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.610
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2670, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.611
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2938, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.611
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3247, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.612
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3537, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.612
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3823, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.613
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4105, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:38.613
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4363, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.462
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.464
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.464
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.465
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.466
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.467
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2670, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.468
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2938, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.468
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3247, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.469
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3537, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.469
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3823, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.470
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4105, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:40:39.471
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4363, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:41:33.394
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:41:33.395
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:41:33.396
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:41:33.397
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.081
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.083
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.084
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.085
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.086
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.087
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2670, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.087
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2938, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.088
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3247, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.088
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3537, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.089
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3823, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.089
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4105, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:41:34.090
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4363, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.879
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.880
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.881
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.883
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.883
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.884
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2670, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.884
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2938, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.885
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3247, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.885
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3537, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.886
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3823, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.886
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4105, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:42:01.886
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4363, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.915
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.918
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.920
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.921
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.921
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.922
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2697, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.923
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3006, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.923
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3296, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.924
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3582, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.924
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3864, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:32.925
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4122, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.794
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.794
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.796
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.796
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.797
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.797
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2695, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.797
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3004, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.799
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3294, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.800
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3580, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.801
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3862, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:33.802
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4120, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:54:35.284
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:54:35.285
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:54:35.311
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:54:35.313
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.995
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.996
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.996
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.997
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.997
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.998
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2695, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.998
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3004, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.998
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3294, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.999
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3580, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.999
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3862, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:35.999
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4120, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.470
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.473
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.474
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.476
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.477
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.479
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2695, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.480
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3004, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.481
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3294, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.483
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3580, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.484
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3862, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:54:59.485
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4120, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1268, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1545, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=1852, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2114, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2386, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=2695, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3004, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3294, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3580, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=3862, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2025-09-26 14:55:01.221
+!MESSAGE Cannot find semantic highlighting for SemanticToken[ofset=4120, length=12, tokenType=METHOD]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:58:34.436
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:58:34.437
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:58:34.438
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-26 14:58:34.439
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.

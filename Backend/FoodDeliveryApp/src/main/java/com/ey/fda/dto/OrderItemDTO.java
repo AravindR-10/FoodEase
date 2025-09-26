@@ -1,0 +1,64 @@
+package com.ey.fda.dto;
+
+public class OrderItemDTO {
+	
+	private Long id;
+	private Long orderId;
+	private Long menuItemId;
+	private Integer quantity;
+	private Double price;
+	
+	public Long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	public Long getOrderId() {
+		return orderId;
+	}
+	
+	public void setOrderId(Long orderId) {
+		this.orderId = orderId;
+	}
+	
+	public Long getMenuItemId() {
+		return menuItemId;
+	}
+	
+	public void setMenuItemId(Long menuItemId) {
+		this.menuItemId = menuItemId;
+	}
+	
+	public Integer getQuantity() {
+		return quantity;
+	}
+	
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+	
+	public Double getPrice() {
+		return price;
+	}
+	
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	
+	public OrderItemDTO() {
+		super();
+	}
+	
+	public OrderItemDTO(Long id, Long orderId, Long menuItemId, Integer quantity, Double price) {
+		super();
+		this.id = id;
+		this.orderId = orderId;
+		this.menuItemId = menuItemId;
+		this.quantity = quantity;
+		this.price = price;
+	}
+	
+}
