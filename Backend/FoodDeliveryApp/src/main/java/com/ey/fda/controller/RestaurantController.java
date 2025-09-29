@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ey.fda.dto.DeliveryDTO;
 import com.ey.fda.dto.MenuItemDTO;
 import com.ey.fda.dto.OrderDTO;
 import com.ey.fda.dto.RestaurantDTO;
+import com.ey.fda.service.DeliveryService;
 import com.ey.fda.service.MenuItemService;
 import com.ey.fda.service.OrderService;
 import com.ey.fda.service.RestaurantService;
@@ -30,9 +32,12 @@ public class RestaurantController {
 
 	@Autowired
 	private MenuItemService menuItemService;
-	
+
 	@Autowired
 	private OrderService orderService;
+
+	@Autowired
+	private DeliveryService deliveryService;
 
 	@PostMapping
 	@PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
@@ -103,14 +108,21 @@ public class RestaurantController {
 
 	@GetMapping("/orders/{restaurantId}")
 	@PreAuthorize("hasAuthority('RESTAURANT_OWNER')")
-    public ResponseEntity<List<OrderDTO>> getOrdersByRestaurant(@PathVariable Long restaurantId) {
-        List<OrderDTO> orders = orderService.getOrdersByRestaurant(restaurantId);
-        return ResponseEntity.ok(orders);
-    }
+	public ResponseEntity<List<OrderDTO>> getOrdersByRestaurant(@PathVariable Long restaurantId) {
+		List<OrderDTO> orders = orderService.getOrdersByRestaurant(restaurantId);
+		return ResponseEntity.ok(orders);
+	}
 
-    @GetMapping("orders/details/{orderId}")
-    public ResponseEntity<OrderDTO> getOrderDetails(@PathVariable Long orderId) {
-        OrderDTO order = orderService.getOrderById(orderId);
-        return ResponseEntity.ok(order);
-    }
+	@GetMapping("orders/details/{orderId}")
+	public ResponseEntity<OrderDTO> getOrderDetails(@PathVariable Long orderId) {
+		OrderDTO order = orderService.getOrderById(orderId);
+		return ResponseEntity.ok(order);
+	}
+
+	@PostMapping("/delivery")
+	public ResponseEntity<DeliveryDTO> createDelivery(@RequestBody DeliveryDTO deliveryDTO) {
+		DeliveryDTO created = deliveryService.createDelivery(deliveryDTO);
+		return ResponseEntity.ok(created);
+	}
+
 }

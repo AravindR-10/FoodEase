@@ -12,16 +12,19 @@
     <fullyQualifiedTypeName name="com.ey.fda.entity.Restaurant"/>
     <fullyQualifiedTypeName name="com.ey.fda.repository.MenuItemRepository"/>
     <fullyQualifiedTypeName name="com.ey.fda.repository.RestaurantRepository"/>
-    <fullyQualifiedTypeName name="com.ey.fda.exception.ResourceNotFoundException"/>
     <fullyQualifiedTypeName name="com.ey.fda.entity.MenuItem"/>
     <fullyQualifiedTypeName name="com.ey.fda.dto.MenuItemDTO"/>
     <fullyQualifiedTypeName name="com.ey.fda.service.MenuItemService"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
     <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
-    <fullyQualifiedTypeName name="com.ey.fda.entity.Order"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="com.ey.fda.exception.ResourceNotFoundException"/>
+    <fullyQualifiedTypeName name="com.ey.fda.entity.Order"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="com.ey.fda.enums.PaymentStatus"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.ey.fda.entity.Delivery"/>
 </qualifiedTypeNameHistroy>

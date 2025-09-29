@@ -32,6 +32,9 @@ public class User {
 	
 	@OneToMany(mappedBy="customer", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Order> orders;
+	
+	@OneToMany(mappedBy = "partner")
+	private List<Delivery> deliveries;
 
 	public Long getId() {
 		return id;
@@ -87,6 +90,14 @@ public class User {
 
 	public void setOrders(List<Order> orders) {
 		this.orders = orders;
+	}
+
+	public List<Delivery> getDeliveries() {
+		return deliveries;
+	}
+
+	public void setDeliveries(List<Delivery> deliveries) {
+		this.deliveries = deliveries;
 	}
 
 	public User() {
