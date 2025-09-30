@@ -1,0 +1,16 @@
+package com.ey.fda.messaging;
+
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class DeliveryStatusListener {
+
+    @RabbitListener(queues = "${delivery.status.queue}", containerFactory = "rabbitListenerContainerFactory")
+    public void handleDeliveryStatusUpdate(DeliveryStatusMessage message) {
+        System.out.println("Received delivery status update:");
+        System.out.println("Delivery ID: " + message.getDeliveryId());
+        System.out.println("Status: " + message.getStatus());
+        System.out.println("Timestamp: " + message.getTimestamp());
+    }
+}

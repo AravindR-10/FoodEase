@@ -14,4 +14,6 @@ public interface DeliveryService {
 
 	List<DeliveryDTO> getDeliveriesByPartnerId(Long partnerId);
 
+	List<DeliveryDTO> getAllDeliveries();
+
 }

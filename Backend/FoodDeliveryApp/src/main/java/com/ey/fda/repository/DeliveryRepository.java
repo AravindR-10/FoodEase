@@ -1,15 +1,21 @@
 package com.ey.fda.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.ey.fda.entity.Delivery;
+import com.ey.fda.enums.DeliveryStatus;
 
 @Repository
 public interface DeliveryRepository extends JpaRepository<Delivery, Long>{
 	
 	List<Delivery> findByPartnerId(Long partnerId);
+	
+	Optional<Delivery> findByOrderId(Long orderId);
+
+	List<Delivery> findByStatusNot(DeliveryStatus delivered);
 	
 }
