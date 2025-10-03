@@ -1,5 +1,0 @@
-package com.ey.fda.repository;
-
-public interface OrderItemRepository {
-
-}
