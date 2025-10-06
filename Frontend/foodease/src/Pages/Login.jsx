@@ -16,10 +16,11 @@ const Login = () => {
 
     try {
       const response = await AuthService.login(email, password);
-      const { token, role } = response.data;
+      const { token, role, id } = response.data;
 
       localStorage.setItem('jwtToken', token);
       localStorage.setItem('userRole', role);
+      localStorage.setItem('userId', id);
 
       switch (role) {
         case 'CUSTOMER':

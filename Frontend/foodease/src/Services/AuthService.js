@@ -11,11 +11,14 @@ const AuthService = {
 
   getCurrentUserRole: () => localStorage.getItem('userRole'),
 
+  getCurrentUserId: () => localStorage.getItem('userId'),
+
   getToken: () => localStorage.getItem('jwtToken'),
 
   logout: () => {
     localStorage.removeItem('jwtToken');
     localStorage.removeItem('userRole');
+    localStorage.removeItem('userId');
   },
 };
 

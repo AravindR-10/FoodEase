@@ -4,8 +4,9 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import ProtectedRoute from './Services/ProtectedRoute';
 import Register from './Pages/Register';
-import AppNavbar from './Components/AppNavbar';
 import AppFooter from './Components/AppFooter';
+import RestaurantDashboard from './Pages/RestaurantDashboard';
+import CreateRestaurant from './Pages/CreateRestaurant';
 
 function App() {
   return (
@@ -14,12 +15,13 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register />} />
-        {/* <Route path='/customer' element={
-          <ProtectedRoute allowedRoles={['CUSTOMER']}>
-            <CustomerDashboard/>
+        <Route path='/restaurant' element={
+          <ProtectedRoute allowedRoles={['RESTAURANT_OWNER']}>
+            <RestaurantDashboard/>
           </ProtectedRoute>
         }
-        /> */}
+        />
+        <Route path='/restaurant/create' element={<CreateRestaurant />} />
       </Routes>
       <AppFooter/>
     </>

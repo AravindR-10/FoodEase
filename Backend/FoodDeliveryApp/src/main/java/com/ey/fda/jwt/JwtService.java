@@ -39,7 +39,7 @@ public class JwtService {
 
 		String token = jwtUtil.generateToken(user, user.getRole());
 
-		return new LoginResponseDTO(token, user.getUsername(), user.getEmail(), user.getRole());
+		return new LoginResponseDTO(token, user.getId(),user.getUsername(), user.getEmail(), user.getRole());
 	}
 
 	public RegisterResponseDTO register(RegisterRequestDTO request) {
