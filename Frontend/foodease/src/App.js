@@ -7,6 +7,8 @@ import Register from './Pages/Register';
 import AppFooter from './Components/AppFooter';
 import RestaurantDashboard from './Pages/RestaurantDashboard';
 import CreateRestaurant from './Pages/CreateRestaurant';
+import EditRestaurant from './Pages/EditRestaurant';
+import RestaurantMenu from './Pages/RestaurantMenu';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         }
         />
         <Route path='/restaurant/create' element={<CreateRestaurant />} />
+        <Route path='/restaurant/:id/edit' element={<EditRestaurant/>} />
+        <Route path='/restaurant/:id/menu' element={<RestaurantMenu/>} />
       </Routes>
       <AppFooter/>
     </>
