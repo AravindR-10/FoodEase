@@ -5,6 +5,7 @@ public class OrderItemDTO {
 	private Long id;
 	private Long orderId;
 	private Long menuItemId;
+	private String menuItemName;
 	private Integer quantity;
 	private Double price;
 	
@@ -32,6 +33,14 @@ public class OrderItemDTO {
 		this.menuItemId = menuItemId;
 	}
 	
+	public String getMenuItemName() {
+		return menuItemName;
+	}
+
+	public void setMenuItemName(String menuItemName) {
+		this.menuItemName = menuItemName;
+	}
+
 	public Integer getQuantity() {
 		return quantity;
 	}
@@ -51,14 +60,15 @@ public class OrderItemDTO {
 	public OrderItemDTO() {
 		super();
 	}
-	
-	public OrderItemDTO(Long id, Long orderId, Long menuItemId, Integer quantity, Double price) {
+
+	public OrderItemDTO(Long id, Long orderId, Long menuItemId, String menuItemName, Integer quantity, Double price) {
 		super();
 		this.id = id;
 		this.orderId = orderId;
 		this.menuItemId = menuItemId;
+		this.menuItemName = menuItemName;
 		this.quantity = quantity;
 		this.price = price;
 	}
-	
+
 }

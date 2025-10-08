@@ -38,8 +38,11 @@ public class JwtService {
 		User user = userDetails.getUser();
 
 		String token = jwtUtil.generateToken(user, user.getRole());
+		
+		LoginResponseDTO loginResponseDTO = new LoginResponseDTO();
+		loginResponseDTO.setToken(token);
 
-		return new LoginResponseDTO(token, user.getId(),user.getUsername(), user.getEmail(), user.getRole());
+		return loginResponseDTO;
 	}
 
 	public RegisterResponseDTO register(RegisterRequestDTO request) {

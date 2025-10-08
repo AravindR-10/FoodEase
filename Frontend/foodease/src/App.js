@@ -9,6 +9,10 @@ import RestaurantDashboard from './Pages/RestaurantDashboard';
 import CreateRestaurant from './Pages/CreateRestaurant';
 import EditRestaurant from './Pages/EditRestaurant';
 import RestaurantMenu from './Pages/RestaurantMenu';
+import AddMenuItem from './Pages/AddMenu';
+import EditMenuItem from './Pages/EditMenu';
+import OrdersPage from './Pages/RestaurantOrders';
+import OrderDetails from './Pages/RestaurantOrderDetails';
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
         <Route path='/restaurant/create' element={<CreateRestaurant />} />
         <Route path='/restaurant/:id/edit' element={<EditRestaurant/>} />
         <Route path='/restaurant/:id/menu' element={<RestaurantMenu/>} />
+        <Route path='/restaurant/:id/menu/add' element={<AddMenuItem/>} />
+        <Route path='/restaurant/:id/menu/:menuItemId/edit' element={<EditMenuItem/>} />
+        <Route path='/restaurant/:id/orders' element={<OrdersPage/>} />
+        <Route path='/restaurant/:id/orders/:orderId' element={<OrderDetails/>} />
       </Routes>
       <AppFooter/>
     </>

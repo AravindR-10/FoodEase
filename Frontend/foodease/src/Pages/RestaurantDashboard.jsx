@@ -33,6 +33,10 @@ const RestaurantDashboard = () => {
     navigate(`/restaurant/${restaurantId}/edit`);
   };
 
+  const handleOrders = (restaurantId) => {
+    navigate(`/restaurant/${restaurantId}/orders`);
+  }
+
   const handleDelete = async (restaurantId) => {
     if (window.confirm('Are you sure you want to delete this restaurant?')) {
       try {
@@ -54,15 +58,17 @@ const RestaurantDashboard = () => {
 
   return (
     <Container className="mt-4">
-      <div className="d-flex justify-content-between align-items-center mb-3">
+      <div className="d-flex justify-content-between align-items-center mb-1">
         <h2>Your Restaurants</h2>
-        <Button variant="success" onClick={() => navigate('/restaurant/create')}>
-          + Create Restaurant
-        </Button>
+        <div className='d-flex gap-2'>
+          <Button variant="success" onClick={() => navigate('/restaurant/create')}>
+            + Create Restaurant
+          </Button>
+        </div>
       </div>
       <Row>
         {restaurants.map((restaurant) => (
-          <Col md={4} key={restaurant.id} className="mb-4">
+          <Col md={6} key={restaurant.id} className="mb-4">
             <Card>
               <Card.Body>
                 <Card.Title>{restaurant.name}</Card.Title>
@@ -77,6 +83,11 @@ const RestaurantDashboard = () => {
                   >
                     View Menu
                   </Button>
+
+                  <Button variant="info" onClick={() => handleOrders(restaurant.id)}>
+                    View Orders
+                  </Button>
+
                   <Button
                     variant="warning"
                     onClick={() => handleUpdate(restaurant.id)}

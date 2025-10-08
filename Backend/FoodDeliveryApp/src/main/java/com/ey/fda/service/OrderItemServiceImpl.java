@@ -22,6 +22,7 @@ public class OrderItemServiceImpl implements OrderItemService {
                         item.getId(),
                         item.getOrder().getId(),
                         item.getMenuItem().getId(),
+                        item.getMenuItem().getName(),
                         item.getQuantity(),
                         item.getPrice()
                 ))

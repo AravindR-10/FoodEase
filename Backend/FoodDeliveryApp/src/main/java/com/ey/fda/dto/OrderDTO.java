@@ -6,6 +6,7 @@ public class OrderDTO {
 	
 	private Long id;
 	private Long customerId;
+	private String customerName;
 	private Long restaurantId;
 	private String status;
 	private Double totalAmount;
@@ -27,6 +28,14 @@ public class OrderDTO {
 		this.customerId = customerId;
 	}
 	
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
 	public Long getRestaurantId() {
 		return restaurantId;
 	}

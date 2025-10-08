@@ -86,6 +86,7 @@ public class OrderServiceImpl implements OrderService {
                 item.getId(),
                 order.getId(),
                 item.getMenuItem().getId(),
+                item.getMenuItem().getName(),
                 item.getQuantity(),
                 item.getPrice()
         )).collect(Collectors.toList());
@@ -111,8 +112,13 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public List<OrderDTO> getOrdersByRestaurant(Long restaurantId) {
         List<Order> orders = orderRepository.findByRestaurantId(restaurantId);
+        
         return orders.stream()
-                     .map(order -> getOrderById(order.getId()))
+                     .map(order -> {
+                         OrderDTO dto = getOrderById(order.getId());
+                         dto.setCustomerName(order.getCustomer().getUsername());
+                         return dto;
+                     })
                      .collect(Collectors.toList());
     }
 }

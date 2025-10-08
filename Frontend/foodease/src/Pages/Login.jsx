@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 import AuthService from '../Services/AuthService';
 import AppNavbar from '../Components/AppNavbar';
+import { jwtDecode } from 'jwt-decode';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -16,9 +17,14 @@ const Login = () => {
 
     try {
       const response = await AuthService.login(email, password);
-      const { token, role, id } = response.data;
+      const { token } = response.data;
 
-      localStorage.setItem('jwtToken', token);
+      localStorage.setItem('jwtToken', token)
+      const decodedToken = jwtDecode(token);
+
+      const id = decodedToken.id;
+      const role = decodedToken.role;
+
       localStorage.setItem('userRole', role);
       localStorage.setItem('userId', id);
 

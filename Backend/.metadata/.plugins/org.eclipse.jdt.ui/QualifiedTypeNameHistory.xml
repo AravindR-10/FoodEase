@@ -31,4 +31,5 @@
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.EnableScheduling"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="com.ey.fda.dto.LoginResponseDTO"/>
 </qualifiedTypeNameHistroy>
