@@ -45,8 +45,10 @@ public class DeliveryStatusScheduler {
 
     private DeliveryStatus getNextStatus(DeliveryStatus current) {
         switch (current) {
-            case ASSIGNED: return DeliveryStatus.EN_ROUTE;
-            case EN_ROUTE: return DeliveryStatus.DELIVERED;
+            case ASSIGNED: return DeliveryStatus.EN_ROUTE_TO_PICK_UP;
+            case EN_ROUTE_TO_PICK_UP: return DeliveryStatus.PICKED_UP;
+            case PICKED_UP: return DeliveryStatus.EN_ROUTE_TO_DELIVER;
+            case EN_ROUTE_TO_DELIVER: return DeliveryStatus.DELIVERED;
             default: return null;
         }
     }

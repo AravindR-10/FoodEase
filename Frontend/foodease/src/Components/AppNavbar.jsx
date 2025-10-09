@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import '../Styles/AppNavbar.css';
 
 const AppNavbar = () => {
   return (
@@ -11,8 +10,8 @@ const AppNavbar = () => {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/login" className='custom-login'>Login</Nav.Link>
-            <Nav.Link as={Link} to="/register" className='custom-register'>Register</Nav.Link>
+            <Nav.Link as={Link} to="/login" style={{color: 'white'}}>Login</Nav.Link>
+            <Nav.Link as={Link} to="/register" style={{color: 'white'}}>Register</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

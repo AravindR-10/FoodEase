@@ -56,9 +56,14 @@ const OrdersPage = () => {
                     <strong>Status:</strong> {order.status} <br />
                     <strong>Total:</strong> ₹{order.totalAmount}
                   </Card.Text>
-                  <Button variant="primary" onClick={() => handleViewOrder(order.id)}>
-                    View Order
-                  </Button>
+                  <div className='d-flex gap-5'>
+                    <Button variant="primary" onClick={() => handleViewOrder(order.id)}>
+                      View Order
+                    </Button>
+                    <Button variant="success" onClick={() => navigate(`/restaurant/${order.id}/delivery/partners`)}>
+                      Delivery Partners
+                    </Button>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

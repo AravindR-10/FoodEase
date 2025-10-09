@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button, Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import RestaurantService from '../Services/RestaurantService';
 import AuthService from '../Services/AuthService';
+import RestaurantNavbar from '../Components/RestaurantNavbar';
 
 const RestaurantDashboard = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -57,56 +58,59 @@ const RestaurantDashboard = () => {
   }
 
   return (
-    <Container className="mt-4">
-      <div className="d-flex justify-content-between align-items-center mb-1">
-        <h2>Your Restaurants</h2>
-        <div className='d-flex gap-2'>
-          <Button variant="success" onClick={() => navigate('/restaurant/create')}>
-            + Create Restaurant
-          </Button>
+    <>
+      <RestaurantNavbar />
+      <Container className="mt-4">
+        <div className="d-flex justify-content-between align-items-center mb-1">
+          <h2>Your Restaurants</h2>
+          <div className='d-flex gap-2'>
+            <Button variant="success" onClick={() => navigate('/restaurant/create')}>
+              + Create Restaurant
+            </Button>
+          </div>
         </div>
-      </div>
-      <Row>
-        {restaurants.map((restaurant) => (
-          <Col md={6} key={restaurant.id} className="mb-4">
-            <Card>
-              <Card.Body>
-                <Card.Title>{restaurant.name}</Card.Title>
-                <Card.Text>
-                  <strong>Address:</strong> {restaurant.address} <br />
-                  <strong>Rating:</strong> {restaurant.rating ?? 'N/A'}
-                </Card.Text>
-                <div className="d-flex justify-content-between">
-                  <Button
-                    variant="primary"
-                    onClick={() => handleViewMenu(restaurant.id)}
-                  >
-                    View Menu
-                  </Button>
+        <Row>
+          {restaurants.map((restaurant) => (
+            <Col md={6} key={restaurant.id} className="mb-4">
+              <Card>
+                <Card.Body>
+                  <Card.Title>{restaurant.name}</Card.Title>
+                  <Card.Text>
+                    <strong>Address:</strong> {restaurant.address} <br />
+                    <strong>Rating:</strong> {restaurant.rating ?? 'N/A'}
+                  </Card.Text>
+                  <div className="d-flex justify-content-between">
+                    <Button
+                      variant="primary"
+                      onClick={() => handleViewMenu(restaurant.id)}
+                    >
+                      View Menu
+                    </Button>
 
-                  <Button variant="info" onClick={() => handleOrders(restaurant.id)}>
-                    View Orders
-                  </Button>
+                    <Button variant="info" onClick={() => handleOrders(restaurant.id)}>
+                      View Orders
+                    </Button>
 
-                  <Button
-                    variant="warning"
-                    onClick={() => handleUpdate(restaurant.id)}
-                  >
-                    Update
-                  </Button>
-                  <Button
-                    variant="danger"
-                    onClick={() => handleDelete(restaurant.id)}
-                  >
-                    Delete
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+                    <Button
+                      variant="warning"
+                      onClick={() => handleUpdate(restaurant.id)}
+                    >
+                      Update
+                    </Button>
+                    <Button
+                      variant="danger"
+                      onClick={() => handleDelete(restaurant.id)}
+                    >
+                      Delete
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </>
   );
 };
 

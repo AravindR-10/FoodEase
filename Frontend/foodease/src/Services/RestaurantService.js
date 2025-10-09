@@ -66,8 +66,19 @@ const getOrderDetails = async (orderId) => {
 };
 
 // Delivery Endpoint
+
+const getDeliveryPartner = async() => {
+  const response = await axiosInstance.get(`${API_BASE}/delivery/partners`);
+  return response.data;
+};
+
 const createDelivery = async (deliveryData) => {
   const response = await axiosInstance.post(`${API_BASE}/delivery`, deliveryData);
+  return response.data;
+};
+
+const getDeliveryByOrderId = async (orderId) => {
+  const response = await axiosInstance.get(`${API_BASE}/delivery/order/${orderId}`);
   return response.data;
 };
 
@@ -84,5 +95,7 @@ export default {
   getMenuItemById,
   getOrdersByRestaurant,
   getOrderDetails,
+  getDeliveryPartner,
   createDelivery,
+  getDeliveryByOrderId,
 };

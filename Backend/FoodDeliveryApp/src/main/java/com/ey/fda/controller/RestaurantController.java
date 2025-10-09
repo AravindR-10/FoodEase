@@ -17,10 +17,13 @@ import com.ey.fda.dto.DeliveryDTO;
 import com.ey.fda.dto.MenuItemDTO;
 import com.ey.fda.dto.OrderDTO;
 import com.ey.fda.dto.RestaurantDTO;
+import com.ey.fda.dto.UserDTO;
+import com.ey.fda.enums.Role;
 import com.ey.fda.service.DeliveryService;
 import com.ey.fda.service.MenuItemService;
 import com.ey.fda.service.OrderService;
 import com.ey.fda.service.RestaurantService;
+import com.ey.fda.service.UserService;
 
 @RestController
 @RequestMapping("/restaurant")
@@ -34,6 +37,9 @@ public class RestaurantController {
 
 	@Autowired
 	private OrderService orderService;
+	
+	@Autowired
+	private UserService userService;
 
 	@Autowired
 	private DeliveryService deliveryService;
@@ -105,6 +111,18 @@ public class RestaurantController {
 	public ResponseEntity<OrderDTO> getOrderDetails(@PathVariable Long orderId) {
 		OrderDTO order = orderService.getOrderById(orderId);
 		return ResponseEntity.ok(order);
+	}
+	
+	@GetMapping("/delivery/partners")
+	public ResponseEntity<List<UserDTO>> getDeliveryPartner(){
+		List<UserDTO> user = userService.getUsersByRole(Role.DELIVERY_PARTNER );
+		return ResponseEntity.ok(user);
+	}
+	
+	@GetMapping("/delivery/order/{orderId}")
+	public ResponseEntity<DeliveryDTO> getDelivery(@PathVariable Long orderId){
+		DeliveryDTO delivery = deliveryService.getDeliveryByOrderId(orderId);
+		return ResponseEntity.ok(delivery);
 	}
 
 	@PostMapping("/delivery")

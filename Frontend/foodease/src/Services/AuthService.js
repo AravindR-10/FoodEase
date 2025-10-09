@@ -15,11 +15,6 @@ const AuthService = {
 
   getToken: () => localStorage.getItem('jwtToken'),
 
-  logout: () => {
-    localStorage.removeItem('jwtToken');
-    localStorage.removeItem('userRole');
-    localStorage.removeItem('userId');
-  },
 };
 
 export default AuthService;
