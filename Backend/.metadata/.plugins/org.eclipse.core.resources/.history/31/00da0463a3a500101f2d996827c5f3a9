@@ -105,11 +105,7 @@ public class OrderServiceImpl implements OrderService {
     public List<OrderDTO> getOrdersByCustomer(Long customerId) {
         List<Order> orders = orderRepository.findByCustomerId(customerId);
         return orders.stream()
-                     .map(order -> {
-                    	 OrderDTO dto = getOrderById(order.getId());
-                    	 dto.setRestaurantName(order.getRestaurant().getName());
-                    	 return dto;
-                     })
+                     .map(order -> getOrderById(order.getId()))
                      .collect(Collectors.toList());
     }
 

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import CustomerService from '../Services/CustomerService';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 const CustomerMenu = () => {
   const { restaurantId } = useParams();
@@ -9,6 +11,8 @@ const CustomerMenu = () => {
   const [loading, setLoading] = useState(true);
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
+  const [showPaymentModal, setShowPaymentModal] = useState(false);
+  const [cardDetails, setCardDetails] = useState({ number: '', expiry: '', cvv: '' });
 
   const customerId = parseInt(localStorage.getItem('userId'));
 
@@ -65,7 +69,16 @@ const CustomerMenu = () => {
     setCartItems([]);
   };
 
-  const handlePlaceOrder = async () => {
+  const getTotalPrice = () => {
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
+
+  const handleMakePayment = async () => {
+    if (!cardDetails.number || !cardDetails.expiry || !cardDetails.cvv) {
+      alert('Please fill in all payment details.');
+      return;
+    }
+
     const orderPayload = {
       customerId,
       restaurantId: parseInt(restaurantId),
@@ -77,18 +90,26 @@ const CustomerMenu = () => {
     };
 
     try {
-      await CustomerService.placeOrder(orderPayload);
-      alert('Order placed successfully!');
+      const orderResponse = await CustomerService.placeOrder(orderPayload);
+      const orderId = orderResponse.id;
+
+      const paymentPayload = {
+        orderId,
+        amount: getTotalPrice(),
+        paymentStatus: 'SUCCESS',
+      };
+
+      await CustomerService.makePayment(paymentPayload);
+
+      alert('Payment successful and order placed!');
       setCartItems([]);
       setShowCart(false);
+      setShowPaymentModal(false);
+      setCardDetails({ number: '', expiry: '', cvv: '' });
     } catch (error) {
-      console.error('Error placing order:', error);
-      alert('Failed to place order.');
+      console.error('Error during payment/order:', error);
+      alert('Payment failed or order could not be placed.');
     }
-  };
-
-  const getTotalPrice = () => {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
   return (
@@ -129,6 +150,7 @@ const CustomerMenu = () => {
         <p>No menu items available.</p>
       )}
 
+      {/* Cart Side Panel */}
       <Offcanvas show={showCart} onHide={() => setShowCart(false)} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Your Cart</Offcanvas.Title>
@@ -163,7 +185,7 @@ const CustomerMenu = () => {
               ))}
               <div className="mt-3">
                 <h5>Total: ₹{getTotalPrice()}</h5>
-                <button className="btn btn-success me-2" onClick={handlePlaceOrder}>
+                <button className="btn btn-success me-2" onClick={() => setShowPaymentModal(true)}>
                   Place Order
                 </button>
                 <button className="btn btn-secondary" onClick={clearCart}>
@@ -174,6 +196,55 @@ const CustomerMenu = () => {
           )}
         </Offcanvas.Body>
       </Offcanvas>
+
+      {/* Payment Modal */}
+      <Modal show={showPaymentModal} onHide={() => setShowPaymentModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Enter Payment Details</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <form>
+            <div className="mb-3">
+              <label className="form-label">Card Number</label>
+              <input
+                type="text"
+                className="form-control"
+                value={cardDetails.number}
+                onChange={(e) => setCardDetails({ ...cardDetails, number: e.target.value })}
+                placeholder="1234 5678 9012 3456"
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Expiry Date</label>
+              <input
+                type="text"
+                className="form-control"
+                value={cardDetails.expiry}
+                onChange={(e) => setCardDetails({ ...cardDetails, expiry: e.target.value })}
+                placeholder="MM/YY"
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">CVV</label>
+              <input
+                type="password"
+                className="form-control"
+                value={cardDetails.cvv}
+                onChange={(e) => setCardDetails({ ...cardDetails, cvv: e.target.value })}
+                placeholder="123"
+              />
+            </div>
+          </form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowPaymentModal(false)}>
+            Cancel
+          </Button>
+          <Button variant="primary" onClick={handleMakePayment}>
+            Make Payment
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

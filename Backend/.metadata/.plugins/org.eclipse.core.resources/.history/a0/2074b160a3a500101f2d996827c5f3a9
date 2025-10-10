@@ -8,7 +8,7 @@ public class OrderDTO {
 	private Long customerId;
 	private String customerName;
 	private Long restaurantId;
-	private String restaurantName;
+	private Long restaurantName;
 	private String status;
 	private Double totalAmount;
 	private List<OrderItemDTO> orderItems;
@@ -45,11 +45,11 @@ public class OrderDTO {
 		this.restaurantId = restaurantId;
 	}
 	
-	public String getRestaurantName() {
+	public Long getRestaurantName() {
 		return restaurantName;
 	}
 
-	public void setRestaurantName(String restaurantName) {
+	public void setRestaurantName(Long restaurantName) {
 		this.restaurantName = restaurantName;
 	}
 

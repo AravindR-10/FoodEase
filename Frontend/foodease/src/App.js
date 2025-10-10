@@ -16,6 +16,7 @@ import OrderDetails from './Pages/RestaurantOrderDetails';
 import DeliveryPartner from './Pages/RestaurantDelivery';
 import CustomerDashboard from './Pages/CustomerDashboard';
 import CustomerMenu from './Pages/CustomerMenu';
+import CustomerOrders from './Pages/CustomerOrders';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         }
         />
         <Route path='/customer/:restaurantId/menu' element={<CustomerMenu />} />
+        <Route path='/customer/orders' element={<CustomerOrders/>} />
       </Routes>
       <AppFooter />
     </>
