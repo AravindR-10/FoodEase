@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CustomerService from '../Services/CustomerService';
-import CustomerNavbar from '../Components/CustomerNavbar';
 import { Button } from 'react-bootstrap';
+import CommonNavbar from '../Components/CommonNavbar';
 
 const CustomerDashboard = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -34,7 +34,7 @@ const CustomerDashboard = () => {
 
   return (
     <>
-      <CustomerNavbar />
+      <CommonNavbar />
       <div className="container mt-4">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2>Restaurants</h2>

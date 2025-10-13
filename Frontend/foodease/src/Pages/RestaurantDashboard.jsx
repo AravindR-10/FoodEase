@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Button, Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import RestaurantService from '../Services/RestaurantService';
 import AuthService from '../Services/AuthService';
-import RestaurantNavbar from '../Components/RestaurantNavbar';
+import CommonNavbar from '../Components/CommonNavbar';
 
 const RestaurantDashboard = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -59,7 +59,7 @@ const RestaurantDashboard = () => {
 
   return (
     <>
-      <RestaurantNavbar />
+      <CommonNavbar/>
       <Container className="mt-4">
         <div className="d-flex justify-content-between align-items-center mb-1">
           <h2>Your Restaurants</h2>

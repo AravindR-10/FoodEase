@@ -31,9 +31,10 @@
     <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.EnableScheduling"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="com.ey.fda.dto.LoginResponseDTO"/>
-    <fullyQualifiedTypeName name="com.ey.fda.enums.Role"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="com.ey.fda.dto.DeliveryDTO"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="com.ey.fda.enums.Role"/>
+    <fullyQualifiedTypeName name="com.ey.fda.service.AdminService"/>
 </qualifiedTypeNameHistroy>

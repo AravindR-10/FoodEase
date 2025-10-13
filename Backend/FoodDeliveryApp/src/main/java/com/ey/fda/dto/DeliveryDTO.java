@@ -7,6 +7,9 @@ public class DeliveryDTO {
     private Long id;
     private Long orderId;
     private Long partnerId;
+    private String partnerName;
+    private String restaurantName;
+    private String customerName;
     private String status;
     private LocalDateTime lastUpdate;
 	public Long getId() {
@@ -26,6 +29,24 @@ public class DeliveryDTO {
 	}
 	public void setPartnerId(Long partnerId) {
 		this.partnerId = partnerId;
+	}
+	public String getPartnerName() {
+		return partnerName;
+	}
+	public void setPartnerName(String partnerName) {
+		this.partnerName = partnerName;
+	}
+	public String getRestaurantName() {
+		return restaurantName;
+	}
+	public void setRestaurantName(String restaurantName) {
+		this.restaurantName = restaurantName;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
 	}
 	public String getStatus() {
 		return status;

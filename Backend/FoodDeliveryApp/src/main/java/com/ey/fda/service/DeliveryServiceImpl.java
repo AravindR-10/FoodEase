@@ -79,18 +79,26 @@ public class DeliveryServiceImpl implements DeliveryService {
 		Delivery delivery = deliveryRepository.findByOrderId(orderId)
 				.orElseThrow(() -> new ResourceNotFoundException("Delivery not found with Order ID: " + orderId));
 
-		return new DeliveryDTO(delivery.getId(), delivery.getOrder().getId(), delivery.getPartner().getId(),
+		DeliveryDTO dto = new DeliveryDTO(delivery.getId(), delivery.getOrder().getId(), delivery.getPartner().getId(),
 				delivery.getStatus().name(), delivery.getLastUpdate());
+		dto.setPartnerName(delivery.getPartner().getUsername());
+		return dto;
 	}
 
 	@Override
 	public List<DeliveryDTO> getDeliveriesByPartnerId(Long partnerId) {
 		List<Delivery> deliveries = deliveryRepository.findByPartnerId(partnerId);
 
-		return deliveries.stream()
-				.map(delivery -> new DeliveryDTO(delivery.getId(), delivery.getOrder().getId(),
-						delivery.getPartner().getId(), delivery.getStatus().name(), delivery.getLastUpdate()))
-				.collect(Collectors.toList());
+		return deliveries.stream().map(delivery -> {
+			DeliveryDTO dto = new DeliveryDTO();
+			dto.setId(delivery.getId());
+			dto.setOrderId(delivery.getOrder().getId());
+			dto.setRestaurantName(delivery.getOrder().getRestaurant().getName());
+			dto.setCustomerName(delivery.getOrder().getCustomer().getUsername());
+			dto.setStatus(delivery.getStatus().name());
+			dto.setLastUpdate(delivery.getLastUpdate());
+			return dto;
+		}).collect(Collectors.toList());
 	}
 
 	@Override
@@ -102,6 +110,7 @@ public class DeliveryServiceImpl implements DeliveryService {
 			dto.setId(delivery.getId());
 			dto.setOrderId(delivery.getOrder().getId());
 			dto.setPartnerId(delivery.getPartner().getId());
+			dto.setPartnerName(delivery.getPartner().getUsername());
 			dto.setStatus(delivery.getStatus().name());
 			dto.setLastUpdate(delivery.getLastUpdate());
 			return dto;

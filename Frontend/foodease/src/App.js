@@ -17,6 +17,10 @@ import DeliveryPartner from './Pages/RestaurantDelivery';
 import CustomerDashboard from './Pages/CustomerDashboard';
 import CustomerMenu from './Pages/CustomerMenu';
 import CustomerOrders from './Pages/CustomerOrders';
+import CustomerOrderDetails from './Pages/CustomerOrderDetails';
+import CustomerPaymentDetails from './Pages/CustomerPaymentDetails';
+import CustomerDeliveryDetails from './Pages/CustomerDeliveryStatus';
+import DeliveryDashboard from './Pages/DeliveryPartnerDashboard';
 
 function App() {
   return (
@@ -46,7 +50,11 @@ function App() {
         }
         />
         <Route path='/customer/:restaurantId/menu' element={<CustomerMenu />} />
-        <Route path='/customer/orders' element={<CustomerOrders/>} />
+        <Route path='/customer/orders' element={<CustomerOrders />} />
+        <Route path='/customer/orders/details/:orderId' element={<CustomerOrderDetails />} />
+        <Route path='/customer/payments/:orderId' element={<CustomerPaymentDetails />} />
+        <Route path='/customer/delivery-status/:orderId' element={<CustomerDeliveryDetails />} />
+        <Route path='/delivery' element={<DeliveryDashboard />} />
       </Routes>
       <AppFooter />
     </>

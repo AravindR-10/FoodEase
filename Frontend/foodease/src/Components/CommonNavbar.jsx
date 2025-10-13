@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LogoutButton from './LogoutButton';
 
-const CustomerNavbar = () => {
+const CommonNavbar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
@@ -21,4 +21,4 @@ const CustomerNavbar = () => {
   );
 };
 
-export default CustomerNavbar;
+export default CommonNavbar;
