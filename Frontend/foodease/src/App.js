@@ -21,6 +21,9 @@ import CustomerOrderDetails from './Pages/CustomerOrderDetails';
 import CustomerPaymentDetails from './Pages/CustomerPaymentDetails';
 import CustomerDeliveryDetails from './Pages/CustomerDeliveryStatus';
 import DeliveryDashboard from './Pages/DeliveryPartnerDashboard';
+import AdminDashboard from './Pages/AdminDashboard';
+import AllUsers from './Pages/AllUsers';
+import AllRestaurants from './Pages/AllRestaurants';
 
 function App() {
   return (
@@ -54,7 +57,20 @@ function App() {
         <Route path='/customer/orders/details/:orderId' element={<CustomerOrderDetails />} />
         <Route path='/customer/payments/:orderId' element={<CustomerPaymentDetails />} />
         <Route path='/customer/delivery-status/:orderId' element={<CustomerDeliveryDetails />} />
-        <Route path='/delivery' element={<DeliveryDashboard />} />
+        <Route path='/delivery' element={
+          <ProtectedRoute allowedRoles={['DELIVERY_PARTNER']}>
+            <DeliveryDashboard />
+          </ProtectedRoute>
+        }
+        />
+        <Route path='/admin' element={
+          <ProtectedRoute allowedRoles={['ADMIN']}>
+            <AdminDashboard/>
+          </ProtectedRoute>
+        }
+        />
+        <Route path='/admin/users' element={<AllUsers />} />
+        <Route path='/admin/restaurants' element={<AllRestaurants />} />
       </Routes>
       <AppFooter />
     </>

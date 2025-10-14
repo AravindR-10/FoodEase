@@ -126,6 +126,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 					dto.setAddress(r.getAddress());
 					dto.setRating(r.getRating());
 					dto.setOwnerId(r.getOwner().getId());
+					dto.setOwnerName(r.getOwner().getUsername());
 					return dto;
 				}).collect(Collectors.toList());
 	}

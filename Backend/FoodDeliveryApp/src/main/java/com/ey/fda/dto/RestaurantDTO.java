@@ -7,6 +7,7 @@ public class RestaurantDTO {
 	private String address;
 	private Double rating;
 	private Long ownerId;
+	private String ownerName;
 	
 	public Long getId() {
 		return id;
@@ -48,6 +49,14 @@ public class RestaurantDTO {
 		this.ownerId = ownerId;
 	}
 	
+	public String getOwnerName() {
+		return ownerName;
+	}
+
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+
 	public RestaurantDTO() {
 		super();
 	}
