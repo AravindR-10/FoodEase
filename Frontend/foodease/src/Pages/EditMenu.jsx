@@ -9,7 +9,7 @@ const EditMenuItem = () => {
     name: '',
     description: '',
     price: '',
-    available: 1,
+    available: true,
     restaurantId: restaurantId,
   });
   const [loading, setLoading] = useState(true);
@@ -103,8 +103,8 @@ const EditMenuItem = () => {
             value={menuItem.available}
             onChange={handleChange}
           >
-            <option value={1}>Available</option>
-            <option value={0}>Not Available</option>
+            <option value="true">Available</option>
+            <option value="false">Not Available</option>
           </Form.Select>
         </Form.Group>
 

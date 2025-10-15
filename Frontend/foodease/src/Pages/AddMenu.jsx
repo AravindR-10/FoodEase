@@ -9,7 +9,7 @@ const AddMenuItem = () => {
     name: '',
     description: '',
     price: '',
-    available: 1,
+    available: true,
     restaurantId: restaurantId
   });
   const [error, setError] = useState('');
@@ -78,8 +78,8 @@ const AddMenuItem = () => {
             value={menuItem.available}
             onChange={handleChange}
           >
-            <option value={1}>Available</option>
-            <option value={0}>Not Available</option>
+            <option value="true">Available</option>
+            <option value="false">Not Available</option>
           </Form.Select>
         </Form.Group>
 
